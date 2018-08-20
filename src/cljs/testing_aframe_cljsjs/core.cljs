@@ -62,7 +62,7 @@
   [:div
    ((load-script) "https://rawgit.com/google-ar/three.ar.js/master/dist/three.ar.js" #())
    ((load-script) "https://rawgit.com/chenzlabs/aframe-ar/master/dist/aframe-ar.js" #())
-   [:a.aframeOverlay {:href "/"} "Back"]
+   [:a.aframeOverlay {:href ".."} "Back"]
    [:a-scene {:ar ""}
     #_[:a-sky {:color "#DAD"}]
     (map
