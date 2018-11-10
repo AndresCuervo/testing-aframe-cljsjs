@@ -60,6 +60,7 @@
 
 (defn about-page []
   [:div
+   (js/console.log "wow")
    ((load-script) "https://rawgit.com/google-ar/three.ar.js/master/dist/three.ar.js" #())
    ((load-script) "https://rawgit.com/chenzlabs/aframe-ar/master/dist/aframe-ar.js" #())
    [:a.aframeOverlay {:href ".."} "Back"]

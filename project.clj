@@ -19,7 +19,7 @@
                  [venantius/accountant "0.2.4"
                   :exclusions [org.clojure/tools.reader]]
 
-                 [cljsjs/aframe "0.7.0-0"]
+                 [cljsjs/aframe "0.8.2-0"]
                  ]
 
   :plugins [[lein-environ "1.1.0"]
@@ -33,7 +33,8 @@
   :min-lein-version "2.5.0"
   :uberjar-name "testing-aframe-cljsjs.jar"
   :main testing-aframe-cljsjs.server
-  :jvm-opts ["--add-modules" "java.xml.bind"]
+  ;; Turn on below for Java > 8 https://github.com/bhauman/lein-figwheel/issues/612
+  ;; :jvm-opts ["--add-modules" "java.xml.bind"]
   :clean-targets ^{:protect false}
   [:target-path
    [:cljsbuild :builds :app :compiler :output-dir]
